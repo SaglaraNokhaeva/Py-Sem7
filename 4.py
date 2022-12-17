@@ -3,4 +3,7 @@
 
 # Обратите внимание: на 9 должно делиться исходное двузначное число, а не его квадрат.
 
-print(sum(map(lambda x: x**2, filter(lambda x: x%9==0, range(10,100)))))
+# print(sum(map(lambda x: x**2, filter(lambda x: x%9==0, range(10,100)))))
+
+# или
+print(sum(map(lambda x: x**2, filter(lambda x: not x%9, range(10,100)))))
