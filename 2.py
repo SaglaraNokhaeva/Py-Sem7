@@ -6,3 +6,7 @@
 # Sample Output:
 # Енисей Волга Лена Дон
 
+string="Лена Енисей Волга Дон"
+river=string.split()
+river_res=sorted(river, key=lambda x: len(x), reverse=True)
+print(' '.join(river_res))
